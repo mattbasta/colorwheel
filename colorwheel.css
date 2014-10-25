@@ -1,0 +1,98 @@
+body {
+/*	background-image: linear-gradient(160deg,#63Df13 20%,#57D39C 80%);*/
+	margin: 0;
+	/*box-sizing: content-box;*/
+	/*background: purple;*/
+	
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	background: purple;
+	transform: -webkit-filter;
+	
+	-webkit-animation-name: yes;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes yes {
+	from { -webkit-filter: hue-rotate(0deg); background-color: #0046ca; }
+	25%  { -webkit-filter: hue-rotate(90deg); background-color: #0e62ff; }
+	50%  { -webkit-filter: hue-rotate(180deg); background-color: #0046ca; }
+	75%  { -webkit-filter: hue-rotate(270deg); background-color: #0e62ff; }
+	to   { -webkit-filter: hue-rotate(360deg); background-color: #0046ca; }
+}
+
+.div1 {
+	height: 240%;
+	width: 102%;
+	display: block;
+	position: fixed;
+	top: -50%;
+	left: -65%;
+	background-color: #d816ce;
+	padding: 0;
+	margin: 0;
+	transform: rotate(120deg);
+	z-index: 1;
+
+	-webkit-animation: purple 2s infinite;
+}
+
+@-webkit-keyframes green {
+    from { background-color: #18cc0d; -webkit-box-shadow: 0 0 9px #135d0f; }
+  	50% { background-color: #3cff30; -webkit-box-shadow: 0 0 18px #3cff30; }
+  	to { background-color: #18cc0d; -webkit-box-shadow: 0 0 9px #135d0f; }
+}
+
+@-webkit-keyframes purple {
+    from { background-color: #d816ce; -webkit-box-shadow: 0 0 9px #6e0b69; }
+  	50% { background-color: #ff3ef5; -webkit-box-shadow: 0 0 18px #ff3ef5; }
+  	to { background-color: #d816ce; -webkit-box-shadow: 0 0 9px #6e0b69; }
+}
+
+@-webkit-keyframes orange {
+    from { background-color: #dd8100; -webkit-box-shadow: 0 0 9px #995900; }
+  	50% { background-color: #ffad3a; -webkit-box-shadow: 0 0 18px #ffad3a; }
+  	to { background-color: #dd8100; -webkit-box-shadow: 0 0 9px #995900; }
+}
+
+@-webkit-keyframes blue {
+    from { background-color: #004ad6; }
+  	50% { background-color: #216eff; }
+  	to { background-color: #004ad6; }
+}
+
+.div2 {
+	height: 100%;
+	width: 50%;
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #18cc0d;
+	padding: 0;
+	margin: 0;
+	z-index: 0;
+
+	-webkit-animation: green 2s infinite;
+	-webkit-animation-delay: .5s;
+}
+
+.div3 {
+	height: 50%;
+	width: 100%;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	background-color: #dd8100;
+	padding: 0;
+	margin: 0;
+	z-index: 0;
+
+	-webkit-animation: orange 2s infinite;
+	-webkit-animation-delay: 1s;
+}
